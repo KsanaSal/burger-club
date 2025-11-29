@@ -3,50 +3,79 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Sansita+Swashed:wght@300..900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./src/output.css" />
         <title>Burger club</title>
     </head>
-    <body class="bg-[#12372A] w-full">
-        <!-- <header class="bg-gray-800 text-white p-4">
-            <div class="container mx-auto flex items-center justify-between">
-                <h1 class="text-2xl font-bold">Burger Club</h1>
-            </div>
-        </header> -->
-
-        <nav>
-            <div class="container mx-auto flex items-center justify-between">
-                <span>BURGUR</span>
-                <ul class="flex space-x-4">
+    <body class="bg-[#12372A] w-full text-[#FBFADA] py-5">
+        <header class="container w-auto py-10">
+            <nav class="flex items-center gap-[150px]">
+                <span class="lexend-zetta-bold text-[50px]">BURGUR</span>
+                <ul
+                    class="flex w-[700px] items-center gap-[60px] px-[100px] sansita-swashed-regular text-[25px]"
+                >
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Menu</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Shop</a></li>
                 </ul>
+            </nav>
+        </header>
+        <main class="container relative">
+            <div class="flex items-center justify-between">
+                <div class="flex flex-col w-[900px] mt-[320px]">
+                    <p
+                        class="lexend-zetta-bold text-[50px] uppercase text-[#ADBC9F]"
+                    >
+                        THE ULTIMATE
+                    </p>
+                    <h1 class="sansita-swashed-bold text-[100px] capitalize">
+                        Burger Club
+                    </h1>
+                    <p class="lexend-zetta-bold text-[20px] text-[#ADBC9F]">
+                        Savor the Flavor, Join the Club!
+                    </p>
+                </div>
+                <div class="absolute top-0 right-0">
+                    <div class="relative w-[1050px] h-[950px]">
+                        <img
+                            class="absolute top-0 left-0 right-0 bottom-0 w-[1050px] h-[950px] z-10"
+                            src="./images/big-burger.png"
+                            alt="Big Burger"
+                        />
+                        <div
+                            class="w-[720px] h-[750px] rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.17),_rgba(255,255,255,0))] blur-[100px] absolute top-[50%] right-[38px] transform -translate-y-1/2 z-0"
+                        ></div>
+                        <div
+                            class="w-[680px] h-[70px] bg-[rgba(0,0,0,0.19)] rounded-full absolute bottom-[136px] right-[78px] z-0"
+                        ></div>
+                    </div>
+                </div>
             </div>
-        </nav>
-
-        <div>
-            <p>THE ULTIMATE</p>
-            <h1>Burger Club</h1>
-            <p>Savor the Flavor, Join the Club!</p>
-        </div>
-
-        <div>
-            <div>
-                <img src="./images/big-burger.png" alt="Big Burger" />
-            </div>
-            <div></div>
-        </div>
-        <ul>
-            <li><img src="./images/burgers/burger-1.png" alt="Burger 1" /></li>
-            <li><img src="./images/burgers/burger-2.png" alt="Burger 2" /></li>
-            <li><img src="./images/burgers/burger-3.png" alt="Burger 3" /></li>
-            <li><img src="./images/burgers/burger-4.png" alt="Burger 4" /></li>
-        </ul>
-        <ul>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-        </ul>
+            <ul>
+                <li>
+                    <img src="./images/burgers/burger-1.png" alt="Burger 1" />
+                </li>
+                <li>
+                    <img src="./images/burgers/burger-2.png" alt="Burger 2" />
+                </li>
+                <li>
+                    <img src="./images/burgers/burger-3.png" alt="Burger 3" />
+                </li>
+                <li>
+                    <img src="./images/burgers/burger-4.png" alt="Burger 4" />
+                </li>
+            </ul>
+            <ul>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+            </ul>
+        </main>
     </body>
 </html>
